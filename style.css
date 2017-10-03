@@ -1,27 +1,45 @@
-body {margin: 0;}
-* {box-sizing: border-box;}
+body {
+  margin: 0;
+  font-family: Calibri;
+}
+* {
+  box-sizing: border-box;
+}
+button {
+  border: 0;
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+}
 
 .ui-sortable {
   min-height: 80px;
 }
 .btn-delete {
   position: absolute;
-  right: 0;
-  top: 0;
+  right: 3px;
+  top: -7px;
   width: 22px;
   height: 22px;
   border: 0;
-  background-color: rgba(0,0,0,0.4);
-  color: white;
+  background-color: transparent;
+  color: darkgray;
+  cursor: pointer;
 }
 /* BOARD */
 .board h1 {
   margin-left: 8px;
+  text-align: center;
 }
 .column-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+}
+.create-column {
+  margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 
@@ -34,10 +52,14 @@ body {margin: 0;}
   margin-left: 8px;
   list-style: none;
   position: relative;
+  padding: 10px;
+}
+.column h2 {
+  text-align: center;
 }
 .column-add-card {
   cursor: pointer;
-  text-decoration: underline;
+  text-decoration: none;
   margin: 5px 8px;
   display: block;
 }
@@ -51,6 +73,9 @@ body {margin: 0;}
   padding: 4px;
   overflow: hidden;
   position: relative;
+  background-color: yellow;
+  text-align: center;
+  padding-top: 10px;
 }
 .card-list {
   list-style: none;
